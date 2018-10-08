@@ -35,3 +35,7 @@ void Person::set_birth(string town)
 	birth_town = town;
 }
 
+string Person::get_name()
+{
+	return (first_name + " " + last_name)
+}

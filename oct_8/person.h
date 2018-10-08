@@ -10,16 +10,17 @@ string lowercase(string);
 
 class Person
 {
-	public:
+	private:
 		string first_name;
 		string last_name;
 		string maiden_name;
 		string birth_town;
 
-	//public:
+	public:
 		void set_name(string, string);
 		void set_maiden(string);
 		void set_birth(string);
+		void get_name();
 
 		string gen_star_wars(void);
 };
