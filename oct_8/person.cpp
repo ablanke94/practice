@@ -37,5 +37,23 @@ void Person::set_birth(string town)
 
 string Person::get_name()
 {
-	return (first_name + " " + last_name)
+	return (first_name + " " + last_name);
+}
+
+string Person::gen_star_wars(void)
+{
+	string part1, part2, part3, part4,
+	       sw_part1, sw_part2, sw_full;
+
+	part1 = last_name.substr(0, 3);
+	part2 = first_name.substr(0, 2);
+	part3 = maiden_name.substr(0, 2);
+	part4 = birth_town.substr(0, 3);
+
+	sw_part1 = lowercase(part1) + lowercase(part2);
+	sw_part2 = lowercase(part3) + lowercase(part4);
+
+	sw_full = capscase(sw_part1, sw_part2);
+
+	return sw_full;
 }

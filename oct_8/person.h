@@ -20,7 +20,7 @@ class Person
 		void set_name(string, string);
 		void set_maiden(string);
 		void set_birth(string);
-		void get_name();
+		string get_name();
 
 		string gen_star_wars(void);
 };
