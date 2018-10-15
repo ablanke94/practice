@@ -6,9 +6,10 @@ using namespace std;
 
 int main()
 {
-	Person people[5];
+	int const MAX_PEOPLE = 5;
+	Person people[MAX_PEOPLE];
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < MAX_PEOPLE; i++)
 	{
 
 		string first, last, maiden, town,

@@ -10,7 +10,6 @@ int main()
 
 	for (int i = 0; i < 5; i++)
 	{
-
 		string first, last, maiden, town,
 		       sw_full, display_name;
 	
@@ -28,7 +27,6 @@ int main()
 
 		cout << display_name << " : " << sw_full << endl;
 	}
-
 	return 0;
 }
 
