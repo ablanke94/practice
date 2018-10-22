@@ -1,4 +1,4 @@
-# Makefile for exam 1 lab
+# Makefile
 #
 #TARGET	= example
 TARGET	= prac.exe
@@ -6,7 +6,7 @@ TARGET	= prac.exe
 #RM		= rm -f
 RM		= del
 
-FILES 	= main.cpp
+FILES 	= prac.cpp
 
 OBJS 	= $(FILES:.cpp=.o)
 
