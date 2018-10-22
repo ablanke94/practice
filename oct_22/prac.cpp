@@ -10,14 +10,14 @@ int main()
 
 	int nums[length] = {};
 
-	for (int i=0; i < length; i++)
-	{
-		
-		nums[i] = i;
+	for (int &i : nums)
+	{		
+		cout << "Enter " << length << " numbers : ";
+		cin >> i;
 	}
 	for (int prac : nums)
 	{
-		cout << nums[prac] << " ";
+		cout << prac << " ";
 	}
 	return 0;
 }
